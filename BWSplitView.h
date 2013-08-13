@@ -21,6 +21,7 @@
 	// Collapse button
 	NSButton *toggleCollapseButton;
 	BOOL isAnimating;
+	id secondaryDelegate;
 }
 
 @property (nonatomic, strong) NSMutableDictionary *minValues, *maxValues, *minUnits, *maxUnits;

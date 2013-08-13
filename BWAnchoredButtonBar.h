@@ -12,6 +12,7 @@
 {
 	BOOL isResizable, isAtBottom, handleIsRightAligned;
 	int selectedIndex;
+	id splitViewDelegate;
 }
 
 @property (nonatomic) BOOL isResizable, isAtBottom, handleIsRightAligned;
