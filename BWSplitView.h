@@ -21,14 +21,14 @@
 	// Collapse button
 	NSButton *toggleCollapseButton;
 	BOOL isAnimating;
-	id secondaryDelegate;
+	id __strong secondaryDelegate;
 }
 
 @property (nonatomic, strong) NSMutableDictionary *minValues, *maxValues, *minUnits, *maxUnits;
 @property (strong) NSMutableDictionary *resizableSubviewPreferredProportion, *nonresizableSubviewPreferredSize;
 @property (strong) NSArray *stateForLastPreferredCalculations;
 @property (strong) NSButton *toggleCollapseButton;
-@property (assign) id secondaryDelegate;
+@property (strong) id secondaryDelegate;
 @property (nonatomic) BOOL collapsibleSubviewCollapsed;
 @property int collapsiblePopupSelection;
 @property BOOL dividerCanCollapse;

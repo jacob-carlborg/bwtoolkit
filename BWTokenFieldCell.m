@@ -21,7 +21,7 @@
 	[attachmentCell setTextColor:[NSColor blackColor]];
 	[attachmentCell setFont:[self font]];
 	
-	return [attachmentCell autorelease];
+	return attachmentCell;
 }
 
 @end

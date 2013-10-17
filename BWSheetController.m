@@ -39,8 +39,8 @@
 
 - (void)encodeWithCoder:(NSCoder*)coder
 {	
-	NSWindowController *tempSheetController = [[[NSWindowController alloc] initWithWindow:sheet] autorelease];
-	NSWindowController *tempParentWindowController = [[[NSWindowController alloc] initWithWindow:parentWindow] autorelease];
+	NSWindowController *tempSheetController = [[NSWindowController alloc] initWithWindow:sheet];
+	NSWindowController *tempParentWindowController = [[NSWindowController alloc] initWithWindow:parentWindow];
 	
 	[coder encodeObject:tempSheetController forKey:@"BWSCSheet"];
 	[coder encodeObject:tempParentWindowController forKey:@"BWSCParentWindow"];

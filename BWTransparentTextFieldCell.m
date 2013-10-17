@@ -25,7 +25,7 @@ static NSShadow *textShadow;
 
 - (NSDictionary *)_textAttributes
 {
-	NSMutableDictionary *attributes = [[[NSMutableDictionary alloc] init] autorelease];
+	NSMutableDictionary *attributes = [[NSMutableDictionary alloc] init];
 	[attributes addEntriesFromDictionary:[super _textAttributes]];
 	[attributes setObject:[NSColor whiteColor] forKey:NSForegroundColorAttributeName];
 	

@@ -18,10 +18,10 @@ static NSGradient *fillGradient;
 
 + (void)initialize;
 {
-    fillStop1			= [[NSColor colorWithCalibratedWhite:(251.0f / 255.0f) alpha:1] retain];
-    fillStop2			= [[NSColor colorWithCalibratedWhite:(251.0f / 255.0f) alpha:1] retain];
-    fillStop3			= [[NSColor colorWithCalibratedWhite:(236.0f / 255.0f) alpha:1] retain];
-	fillStop4			= [[NSColor colorWithCalibratedWhite:(243.0f / 255.0f) alpha:1] retain];
+    fillStop1			= [NSColor colorWithCalibratedWhite:(251.0f / 255.0f) alpha:1];
+    fillStop2			= [NSColor colorWithCalibratedWhite:(251.0f / 255.0f) alpha:1];
+    fillStop3			= [NSColor colorWithCalibratedWhite:(236.0f / 255.0f) alpha:1];
+	fillStop4			= [NSColor colorWithCalibratedWhite:(243.0f / 255.0f) alpha:1];
 	
     fillGradient		= [[NSGradient alloc] initWithColorsAndLocations:
 						   fillStop1, (CGFloat)0.0,
@@ -30,13 +30,13 @@ static NSGradient *fillGradient;
 						   fillStop4, (CGFloat)1.0,
 						   nil];
 	
-	topBorderColor		= [[NSColor colorWithCalibratedWhite:(126.0f / 255.0f) alpha:1] retain];
-	borderColor			= [[NSColor colorWithCalibratedWhite:(151.0f / 255.0f) alpha:1] retain];
+	topBorderColor		= [NSColor colorWithCalibratedWhite:(126.0f / 255.0f) alpha:1];
+	borderColor			= [NSColor colorWithCalibratedWhite:(151.0f / 255.0f) alpha:1];
 	
-	topInsetColor		= [[NSColor colorWithCalibratedWhite:(0.0f / 255.0f) alpha:0.08] retain];
-	bottomInsetColor	= [[NSColor colorWithCalibratedWhite:(255.0f / 255.0f) alpha:0.54] retain];
+	topInsetColor		= [NSColor colorWithCalibratedWhite:(0.0f / 255.0f) alpha:0.08];
+	bottomInsetColor	= [NSColor colorWithCalibratedWhite:(255.0f / 255.0f) alpha:0.54];
 	
-	pressedColor		= [[NSColor colorWithCalibratedWhite:(0.0f / 255.0f) alpha:0.3] retain];
+	pressedColor		= [NSColor colorWithCalibratedWhite:(0.0f / 255.0f) alpha:0.3];
 }
 
 - (void)drawBezelWithFrame:(NSRect)cellFrame inView:(NSView *)controlView

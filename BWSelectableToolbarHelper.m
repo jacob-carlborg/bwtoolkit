@@ -72,13 +72,5 @@
 	[coder encodeBool:[self isPreferencesToolbar] forKey:@"BWSTHIsPreferencesToolbar"];
 }
 
-- (void)dealloc
-{
-	[contentViewsByIdentifier release];
-	[windowSizesByIdentifier release];
-	[selectedIdentifier release];
-	[oldWindowTitle release];
-	[super dealloc];
-}
 
 @end

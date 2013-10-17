@@ -156,16 +156,16 @@
 	if (![self.className isEqualToString:@"NSView"])
 		text = self.className;
 	
-	NSMutableDictionary *attributes = [[[NSMutableDictionary alloc] init] autorelease];
+	NSMutableDictionary *attributes = [[NSMutableDictionary alloc] init];
 	[attributes setObject:[NSColor whiteColor] forKey:NSForegroundColorAttributeName];
 	[attributes setObject:[NSFont boldSystemFontOfSize:12] forKey:NSFontAttributeName];
 	
-	NSShadow *shadow = [[[NSShadow alloc] init] autorelease];
+	NSShadow *shadow = [[NSShadow alloc] init];
 	[shadow setShadowOffset:NSMakeSize(0,-1)];
 	[shadow setShadowColor:[[NSColor blackColor] colorWithAlphaComponent:0.4]];
 	[attributes setObject:shadow forKey:NSShadowAttributeName];
 	
-	NSMutableAttributedString *string = [[[NSMutableAttributedString alloc] initWithString:text attributes:attributes] autorelease];
+	NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:text attributes:attributes];
 	
 	NSRect boundingRect = [string boundingRectWithSize:rect.size options:0];
 	

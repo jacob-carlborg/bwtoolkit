@@ -43,20 +43,14 @@
 {
 	if (identifierString != aString)
 	{
-		[identifierString release];
 		identifierString = [aString copy];
 	}
 	
 	if (identifierString == nil || [identifierString isEqualToString:@""])
-		[self _setItemIdentifier:[[NSString bwRandomUUID] retain]];
+		[self _setItemIdentifier:[NSString bwRandomUUID]];
 	else
 		[self _setItemIdentifier:identifierString];
 }
 
-- (void)dealloc
-{
-	[identifierString release];
-	[super dealloc];
-}
 
 @end

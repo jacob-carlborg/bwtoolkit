@@ -39,8 +39,8 @@ static NSShadow *contentShadow;
 	[checkboxOnN setFlipped:YES];
 	[checkboxOnP setFlipped:YES];
 	
-	enabledColor = [[NSColor whiteColor] retain];
-	disabledColor = [[NSColor colorWithCalibratedWhite:0.6 alpha:1] retain];
+	enabledColor = [NSColor whiteColor];
+	disabledColor = [NSColor colorWithCalibratedWhite:0.6 alpha:1];
 	
 	contentShadow = [[NSShadow alloc] init];
 	[contentShadow setShadowOffset:NSMakeSize(0,-1)];
@@ -48,7 +48,7 @@ static NSShadow *contentShadow;
 
 - (NSDictionary *)_textAttributes
 {
-	NSMutableDictionary *attributes = [[[NSMutableDictionary alloc] init] autorelease];
+	NSMutableDictionary *attributes = [[NSMutableDictionary alloc] init];
 	[attributes addEntriesFromDictionary:[super _textAttributes]];
 	[attributes setObject:[self interiorColor] forKey:NSForegroundColorAttributeName];
 	

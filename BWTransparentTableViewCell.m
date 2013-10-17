@@ -21,12 +21,12 @@
 		else
 			textColor = [NSColor whiteColor];
 		
-		NSMutableDictionary *attributes = [[[NSMutableDictionary alloc] init] autorelease];
+		NSMutableDictionary *attributes = [[NSMutableDictionary alloc] init];
 		[attributes addEntriesFromDictionary:[[self attributedStringValue] attributesAtIndex:0 effectiveRange:NULL]];
 		[attributes setObject:textColor forKey:NSForegroundColorAttributeName];
 		[attributes setObject:[NSFont systemFontOfSize:11] forKey:NSFontAttributeName];
 		
-		NSMutableAttributedString *string = [[[NSMutableAttributedString alloc] initWithString:[self title] attributes:attributes] autorelease];
+		NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:[self title] attributes:attributes];
 		[self setAttributedStringValue:string];
 	}
 	

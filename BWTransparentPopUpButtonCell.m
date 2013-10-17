@@ -35,8 +35,8 @@ static NSColor *disabledColor, *enabledColor;
 	pullDownRightN = [[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:@"TransparentPopUpPullDownRightN.tif"]];
 	pullDownRightP = [[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:@"TransparentPopUpPullDownRightP.tif"]];
 	
-	enabledColor = [[NSColor whiteColor] retain];
-	disabledColor = [[NSColor colorWithCalibratedWhite:0.6 alpha:1] retain];
+	enabledColor = [NSColor whiteColor];
+	disabledColor = [NSColor colorWithCalibratedWhite:0.6 alpha:1];
 }
 
 - (void)drawBezelWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
@@ -139,7 +139,7 @@ static NSColor *disabledColor, *enabledColor;
 
 - (NSDictionary *)_textAttributes
 {
-	NSMutableDictionary *attributes = [[[NSMutableDictionary alloc] init] autorelease];
+	NSMutableDictionary *attributes = [[NSMutableDictionary alloc] init];
 	[attributes addEntriesFromDictionary:[super _textAttributes]];
 	[attributes setObject:[NSFont systemFontOfSize:11] forKey:NSFontAttributeName];
 	[attributes setObject:[self interiorColor] forKey:NSForegroundColorAttributeName];

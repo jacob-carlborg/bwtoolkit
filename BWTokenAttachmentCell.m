@@ -59,14 +59,14 @@ static float arrowHeight = 6.0;
 	[textShadow setShadowOffset:NSMakeSize(0,1 / [[NSScreen mainScreen] userSpaceScaleFactor])];
 	[textShadow setShadowColor:[[NSColor blackColor] colorWithAlphaComponent:0.3]];
 	
-	highlightedArrowColor = [[NSColor colorWithCalibratedRed:246.0/255.0 green:249.0/255.0 blue:254.0/255.0 alpha:1] retain];
+	highlightedArrowColor = [NSColor colorWithCalibratedRed:246.0/255.0 green:249.0/255.0 blue:254.0/255.0 alpha:1];
 }
 
 - (NSImage *)arrowInHighlightedState:(BOOL)isHighlighted
 {
 	float scaleFactor = [[NSScreen mainScreen] userSpaceScaleFactor];
 	
-	NSImage *arrowImage = [[[NSImage alloc] init] autorelease];
+	NSImage *arrowImage = [[NSImage alloc] init];
 	[arrowImage setSize:NSMakeSize(arrowWidth, arrowHeight)];
 	[arrowImage setFlipped:YES];
 	
@@ -178,7 +178,7 @@ static float arrowHeight = 6.0;
 {
 	if (_tacFlags._selected)
 	{	
-		NSMutableDictionary *attributes = [[[NSMutableDictionary alloc] init] autorelease];
+		NSMutableDictionary *attributes = [[NSMutableDictionary alloc] init];
 		[attributes addEntriesFromDictionary:[super _textAttributes]];
 		[attributes setObject:textShadow forKey:NSShadowAttributeName];
 		

@@ -46,10 +46,5 @@
 	[self addCursorRect:[self bounds] cursor:[NSCursor pointingHandCursor]];
 }
 
-- (void)dealloc
-{
-	[urlString release];
-	[super dealloc];
-}
 
 @end
