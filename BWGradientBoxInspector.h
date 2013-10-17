@@ -21,9 +21,9 @@
 	float largeViewHeight, smallViewHeight;
 }
 
-@property (nonatomic, retain) IBOutlet BWGradientWell *gradientWell;
-@property (nonatomic, retain) IBOutlet NSColorWell *colorWell;
-@property (nonatomic, retain) IBOutlet NSView *wellContainer;
+@property (nonatomic, strong) IBOutlet BWGradientWell *gradientWell;
+@property (nonatomic, strong) IBOutlet NSColorWell *colorWell;
+@property (nonatomic, strong) IBOutlet NSView *wellContainer;
 @property int fillPopupSelection;
 
 @end

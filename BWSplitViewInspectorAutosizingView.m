@@ -76,8 +76,8 @@
 				buttonRect = NSMakeRect(0, y, self.bounds.size.width, self.bounds.size.height - y);
 		}
 		
-		NSButton *subviewButton = [[[NSButton alloc] initWithFrame:buttonRect] autorelease];
-		[subviewButton setCell:[[[BWSplitViewInspectorAutosizingButtonCell alloc] initTextCell:@""] autorelease]];
+		NSButton *subviewButton = [[NSButton alloc] initWithFrame:buttonRect];
+		[subviewButton setCell:[[BWSplitViewInspectorAutosizingButtonCell alloc] initTextCell:@""]];
 		[subviewButton setTarget:self];
 		[subviewButton setAction:@selector(updateValues:)];
 		[subviewButton setTag:i];
@@ -85,12 +85,12 @@
 		// Make the new buttons represent whether the subviews are set to resize or not
 		if ([splitView isVertical])
 		{
-			if ([[[splitView subviews] objectAtIndex:i] autoresizingMask] & NSViewWidthSizable)
+			if ([(NSView*) [[splitView subviews] objectAtIndex:i] autoresizingMask] & NSViewWidthSizable)
 				[subviewButton setIntValue:1];
 		}
 		else
 		{
-			if ([[[splitView subviews] objectAtIndex:i] autoresizingMask] & NSViewHeightSizable)
+			if ([(NSView*) [[splitView subviews] objectAtIndex:i] autoresizingMask] & NSViewHeightSizable)
 				[subviewButton setIntValue:1];
 		}
 		
@@ -162,10 +162,5 @@
 	}
 }
 
-- (void)dealloc
-{
-	[buttons release];
-	[super dealloc];
-}
 
 @end

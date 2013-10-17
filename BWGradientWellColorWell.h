@@ -14,6 +14,6 @@
 	BWGradientWell *gradientWell;
 }
 
-@property (nonatomic, retain) IBOutlet BWGradientWell *gradientWell;
+@property (nonatomic, strong) IBOutlet BWGradientWell *gradientWell;
 
 @end

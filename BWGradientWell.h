@@ -13,6 +13,6 @@
 	NSColorWell *startingColorWell, *endingColorWell;
 }
 
-@property (nonatomic, retain) IBOutlet NSColorWell *startingColorWell, *endingColorWell;
+@property (nonatomic, strong) IBOutlet NSColorWell *startingColorWell, *endingColorWell;
 
 @end

@@ -25,7 +25,7 @@
 
 @property int subviewPopupSelection, minUnitPopupSelection, maxUnitPopupSelection;
 @property (copy) NSMutableArray *subviewPopupContent, *collapsiblePopupContent;
-@property (retain) BWSplitView *splitView;
+@property (strong) BWSplitView *splitView;
 @property BOOL dividerCheckboxCollapsed;
 
 @end

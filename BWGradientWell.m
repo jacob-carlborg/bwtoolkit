@@ -17,7 +17,7 @@ static NSImage *pattern;
 
 + (void)initialize
 {
-	borderColor = [[NSColor colorWithCalibratedWhite:(121.0 / 255.0) alpha:1] retain];
+	borderColor = [NSColor colorWithCalibratedWhite:(121.0 / 255.0) alpha:1];
 	
 	NSBundle *bundle = [NSBundle bundleForClass:[BWGradientWell class]];
 	pattern = [[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:@"GradientWellPattern.tif"]];
@@ -31,7 +31,6 @@ static NSImage *pattern;
 	
 	NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:[startingColorWell color] endingColor:[endingColorWell color]];
 	[gradient drawInRect:insetRect angle:0];
-	[gradient release];
 							
 	[borderColor set];
 	NSFrameRect(self.bounds);

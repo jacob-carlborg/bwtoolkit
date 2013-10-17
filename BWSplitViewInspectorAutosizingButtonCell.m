@@ -30,8 +30,8 @@ static float interiorInset = 7.0;
 	else
 		viewColor = [IBColor childlessCustomViewBackgroundColor];
 	
-	lineColor = [[NSColor colorWithCalibratedRed:124.0/255.0 green:139.0/255.0 blue:159.0/255.0 alpha:1.0] retain];
-	insetLineColor = [[[NSColor whiteColor] colorWithAlphaComponent:0.19] retain];
+	lineColor = [NSColor colorWithCalibratedRed:124.0/255.0 green:139.0/255.0 blue:159.0/255.0 alpha:1.0];
+	insetLineColor = [[NSColor whiteColor] colorWithAlphaComponent:0.19];
 	
 	NSBundle *bundle = [NSBundle bundleForClass:[BWSplitViewInspectorAutosizingButtonCell class]];
 	blueArrowStart = [[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:@"Inspector-SplitViewArrowBlueLeft.tif"]];

@@ -15,7 +15,7 @@
 	BWSplitView *splitView;
 }
 
-@property (retain) BWSplitView *splitView;
+@property (strong) BWSplitView *splitView;
 
 - (void)layoutButtons;
 - (BOOL)isVertical;

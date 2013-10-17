@@ -84,14 +84,14 @@
 {
 	IBDocument *document = [IBDocument documentForObject:anObj];
 	
-	return [[document objects] retain];
+	return [document objects];
 }
 
 - (id)parentOfObject:(id)anObj
 {
 	IBDocument *document = [IBDocument documentForObject:anObj];
 	
-	return [[document parentOfObject:anObj] retain];
+	return [document parentOfObject:anObj];
 }
 
 - (NSArray *)childrenOfObject:(id)object

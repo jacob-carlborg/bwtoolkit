@@ -17,7 +17,7 @@ static float bezelThickness = 2;
 
 + (void)initialize
 {
-	borderColor = [[NSColor colorWithCalibratedWhite:(66.0 / 255.0) alpha:1] retain];
+	borderColor = [NSColor colorWithCalibratedWhite:(66.0 / 255.0) alpha:1];
 }
 
 - (void)drawRect:(NSRect)rect
