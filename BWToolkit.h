@@ -6,9 +6,7 @@
 //  All code is provided under the New BSD license.
 //
 
-#import <InterfaceBuilderKit/InterfaceBuilderKit.h>
-
-@interface BWToolkit : IBPlugin {
+@interface BWToolkit {
 
 }
 
