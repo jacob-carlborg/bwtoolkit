@@ -23,6 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		13F8B89007B43554008AE28D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
+		168FA234180BFA5F008B62F3 /* BWToolkit.xcplugindata in Resources */ = {isa = PBXBuildFile; fileRef = 168FA233180BFA5F008B62F3 /* BWToolkit.xcplugindata */; };
 		4647A13617B9F2C80002C096 /* BWToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0259C57AFE90428111CA0C5A /* BWToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4647A13817B9F2C80002C096 /* BWTexturedSliderInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6309DF0DC7F2EE00AD7F9E /* BWTexturedSliderInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4647A13A17B9F2C80002C096 /* BWSelectableToolbarInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6309E10DC7F2EE00AD7F9E /* BWSelectableToolbarInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,6 +90,8 @@
 		4647A1D017B9F3190002C096 /* NSString+BWAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CA66C0F50EF79AC0005EE9A5 /* NSString+BWAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4647A1D217B9F3190002C096 /* NSApplication+BWAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CAAC33380FE5DA5700C66575 /* NSApplication+BWAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4647A1D617B9F3190002C096 /* NSWindow-NSTimeMachineSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0D2A250E2F034000E8680C /* NSWindow-NSTimeMachineSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A018B8B18106DED0002A625 /* BWTK.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C7DE52F01325C29F009F7FA7 /* BWTK.framework */; };
+		7A018B8C18106E010002A625 /* InterfaceBuilderKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4647A12317B9E39F0002C096 /* InterfaceBuilderKit.framework */; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
 		8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */; };
 		C08787290A49DE9A00E9B151 /* BWToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* BWToolkit.m */; };
@@ -485,6 +488,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7A018B8B18106DED0002A625 /* BWTK.framework in Copy Frameworks */,
+				7A018B8C18106E010002A625 /* InterfaceBuilderKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,13 +502,16 @@
 		13F8B88807B434F6008AE28D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		13F8B88907B434F6008AE28D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		13F8B88A07B434F6008AE28D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		168FA233180BFA5F008B62F3 /* BWToolkit.xcplugindata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BWToolkit.xcplugindata; sourceTree = "<group>"; };
 		32DBCF980370C29C00C91783 /* BWToolkit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWToolkit_Prefix.pch; sourceTree = "<group>"; };
 		4647A12317B9E39F0002C096 /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
 		53DF68FE067E5B5A0090B5B0 /* BWToolkit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BWToolkit-Info.plist"; sourceTree = "<group>"; };
+		7A018B8E1813137D0002A625 /* BWStyledTextField.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.ibClassDescription; path = BWStyledTextField.classdescription; sourceTree = "<group>"; };
+		7A018B90181317B50002A625 /* BWStyledTextField.inspector */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BWStyledTextField.inspector; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7534CD31325BC4A002EF382 /* BWTK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWTK.framework; path = DerivedData/BWToolkit/Build/Products/Release/BWTK.framework; sourceTree = "<group>"; };
-		C7534CD51325BC4A002EF382 /* BWToolkit.ibplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWToolkit.ibplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7534CD51325BC4A002EF382 /* BWToolkit.ideplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BWToolkit.ideplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D4AD1712C939E8000FD3F9 /* BWToolkitMAS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BWToolkitMAS-Info.plist"; sourceTree = "<group>"; };
 		C7DE52F01325C29F009F7FA7 /* BWTK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BWTK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DE52F11325C29F009F7FA7 /* BWTKMAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BWTKMAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -802,7 +810,6 @@
 		CAEE07730FD79453001A1C3F /* BWGradientBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWGradientBox.h; sourceTree = "<group>"; };
 		CAEE07740FD79453001A1C3F /* BWGradientBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWGradientBox.m; sourceTree = "<group>"; };
 		CAEE07770FD79C65001A1C3F /* BWGradientBox.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BWGradientBox.classdescription; sourceTree = "<group>"; };
-		CAEE07780FD79C96001A1C3F /* BWStyledTextField.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BWStyledTextField.classdescription; sourceTree = "<group>"; };
 		CAEE077A0FD79CE9001A1C3F /* BWStyledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWStyledTextField.h; sourceTree = "<group>"; };
 		CAEE077B0FD79CE9001A1C3F /* BWStyledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWStyledTextField.m; sourceTree = "<group>"; };
 		CAEE07830FD79D6E001A1C3F /* BWStyledTextFieldCell.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BWStyledTextFieldCell.classdescription; sourceTree = "<group>"; };
@@ -881,6 +888,7 @@
 				CA99183C0DF4DC6200FE0577 /* Libraries */,
 				CA99183D0DF4DC6A00FE0577 /* Inspectors */,
 				CA630A530DC7F59800AD7F9E /* Library Thumbnails */,
+				168FA233180BFA5F008B62F3 /* BWToolkit.xcplugindata */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -919,6 +927,7 @@
 			children = (
 				54D33B2406778DD400C9C163 /* Class Descriptions */,
 				54D33B2506778DF000C9C163 /* Classes */,
+				7A018B8F181317950002A625 /* Inspector Views */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
 				131E8FE8067F80F40006E0CE /* Resources */,
 			);
@@ -997,7 +1006,7 @@
 				CAEE04F40FD7552F001A1C3F /* BWHyperlinkButton.classdescription */,
 				CAEE04F50FD75541001A1C3F /* BWHyperlinkButtonCell.classdescription */,
 				CAEE07770FD79C65001A1C3F /* BWGradientBox.classdescription */,
-				CAEE07780FD79C96001A1C3F /* BWStyledTextField.classdescription */,
+				7A018B8E1813137D0002A625 /* BWStyledTextField.classdescription */,
 				CAEE07830FD79D6E001A1C3F /* BWStyledTextFieldCell.classdescription */,
 			);
 			name = "Class Descriptions";
@@ -1047,6 +1056,14 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		7A018B8F181317950002A625 /* Inspector Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A018B90181317B50002A625 /* BWStyledTextField.inspector */,
+			);
+			name = "Inspector Views";
+			sourceTree = "<group>";
+		};
 		C0894DA40C32F4C100401507 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -1071,7 +1088,7 @@
 		C7534CD61325BC4A002EF382 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C7534CD51325BC4A002EF382 /* BWToolkit.ibplugin */,
+				C7534CD51325BC4A002EF382 /* BWToolkit.ideplugin */,
 				C7DE52F01325C29F009F7FA7 /* BWTK.framework */,
 				C7DE52F11325C29F009F7FA7 /* BWTKMAS.framework */,
 			);
@@ -1728,7 +1745,7 @@
 			name = BWToolkit;
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = BWToolkit;
-			productReference = C7534CD51325BC4A002EF382 /* BWToolkit.ibplugin */;
+			productReference = C7534CD51325BC4A002EF382 /* BWToolkit.ideplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 		C7D4AC6A12C939E8000FD3F9 /* BWTKMAS */ = {
@@ -1906,6 +1923,7 @@
 				CAD1E00D0E1B476C005E4CBF /* Inspector-ButtonBarMode3Pressed.tif in Resources */,
 				CAD1E0130E1B4C2C005E4CBF /* Inspector-ButtonBarMode1Pressed.tif in Resources */,
 				CAD1E0190E1B7425005E4CBF /* Library-SelectableToolbar.tif in Resources */,
+				168FA234180BFA5F008B62F3 /* BWToolkit.xcplugindata in Resources */,
 				CA4A50DE0E1DCB9E00BC7395 /* BWSheetController.classdescription in Resources */,
 				CA4A51E30E1EC6B700BC7395 /* Library-SheetController.tif in Resources */,
 				CA4A52070E1EE3CC00BC7395 /* BWControllersLibrary.nib in Resources */,
@@ -2236,10 +2254,13 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)/DerivedData/BWToolkit/Build/Products/Release\"",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"/Library/Frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -2248,9 +2269,14 @@
 				GCC_PREFIX_HEADER = BWToolkit_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Developer/Xcode/Plug-ins";
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = BWToolkit;
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = ibplugin;
+				WRAPPER_EXTENSION = ideplugin;
 			};
 			name = Debug;
 		};
@@ -2261,19 +2287,27 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)/DerivedData/BWToolkit/Build/Products/Release\"",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"/Library/Frameworks\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BWToolkit_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Developer/Xcode/Plug-ins";
+				OTHER_LDFLAGS = (
+					"-rpath",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = BWToolkit;
 				SDKROOT = macosx;
-				WRAPPER_EXTENSION = ibplugin;
+				WRAPPER_EXTENSION = ideplugin;
 			};
 			name = Release;
 		};

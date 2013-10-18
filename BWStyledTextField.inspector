@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slice>
+    <sliver title="Our Setting">
+        <property type="string" title="Our Setting" 
+               keyPath="inspectedObjectsController.selection.object.ourSetting" />
+    </sliver>
+</slice>

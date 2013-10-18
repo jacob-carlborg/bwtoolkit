@@ -1,12 +1,12 @@
-{
-	Actions = {
-		// Define action descriptions here, for example
-		// "myAction:" = id;
-	};
-	Outlets = {
-		// Define outlet descriptions here, for example
-		// myOutlet = NSView;
-	};
-    ClassName = BWStyledTextField; 
-    SuperClass = NSTextField; 
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ClassName</key>
+		<string>BWStyledTextField</string>
+		<key>SuperClass</key>
+		<string>NSTextField</string>
+	</dict>
+</array>
+</plist>
