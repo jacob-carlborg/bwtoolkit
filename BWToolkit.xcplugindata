@@ -8,44 +8,25 @@
 		<dict/>
 		<key>extensions</key>
 		<dict>
-			<key>Xcode.InterfaceBuilderKit.BWToolkitIntegration.Inspector.Attributes.BWStyledTextField</key>
+			<key>Xcode.InterfaceBuilderKit.BWToolkitIntegration.ObjectLibraryTemplates</key>
 			<dict>
-				<key>inspectorTitle</key>
-				<string>BWStyledTextField</string>
+				<key>controller</key>
+				<string>IBMacFrameworksObjectLibraryTemplateController</string>
 				<key>id</key>
-				<string>Xcode.InterfaceBuilderKit.BWToolkitIntegration.Inspector.Attributes.BWStyledTextField</string>
-				<key>contentType</key>
-				<string>Xcode.InterfaceBuilderKit.BWStyledTextField</string>
-				<key>point</key>
-				<string>Xcode.IDEKit.Inspector</string>
-				<key>version</key>
-				<string>0.1</string>
-				<key>sliceFile</key>
-				<string>BWStyledTextField</string>
-				<key>controllerClass</key>
-				<string>IBInspectorViewController</string>
+				<string>Xcode.InterfaceBuilderKit.BWToolkitIntegration.ObjectLibraryTemplates</string>
+				<key>librarySourceTitle</key>
+				<string>Xcode.InterfaceBuilderKit.BWToolkitIntegration.ObjectsLibraryTemplates.BWToolkitLibrarySourceTitle</string>
 				<key>name</key>
-				<string>BWStyledTextField</string>
-				<key>categoryIdentifier</key>
-				<string>Xcode.InterfaceBuilderKit.InspectorCategory.Attributes</string>
-			</dict>
-			<key>Xcode.InterfaceBuilderKit.MacOSX.ClassDescriptionIntegrator.BWStyledTextField</key>
-			<dict>
-				<key>classdescriptions</key>
-				<string></string>
-				<key>New item</key>
+				<string>BWToolkit Objects Library</string>
+				<key>nib</key>
 				<array>
 					<dict>
 						<key>filename</key>
-						<string>BWStyledTextField.classdescription</string>
+						<string>BWStyledTextField</string>
 					</dict>
 				</array>
-				<key>id</key>
-				<string>Xcode.InterfaceBuilderKit.MacOSX.ClassDescriptionIntegrator.BWStyledTextField</string>
-				<key>name</key>
-				<string>BWStyledTextField Descriptions</string>
 				<key>point</key>
-				<string>Xcode.InterfaceBuilderKit.ClassDescriptions</string>
+				<string>Xcode.InterfaceBuilderKit.ObjectLibraryTemplates</string>
 				<key>runtime</key>
 				<array>
 					<dict>
@@ -56,16 +37,39 @@
 				<key>version</key>
 				<string>0.1</string>
 			</dict>
-			<key>Xcode.BWToolkit.Initializer</key>
+			<key>Xcode.InterfaceBuilderKit.BWToolkitIntegration.IntegratorBundleSupport</key>
 			<dict>
+				<key>dependentFramework</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>BWTK.framework</string>
+						<key>path</key>
+						<string>/Library/Frameworks/</string>
+					</dict>
+				</array>
 				<key>id</key>
-				<string>Xcode.BWToolkit.Initializer</string>
-				<key>initializationClass</key>
-				<string>BWToolkit</string>
+				<string>Xcode.InterfaceBuilderKit.BWToolkitIntegration.IntegratorBundleSupport</string>
+				<key>integratedClass</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>BWStyledTextField</string>
+					</dict>
+				</array>
+				<key>integratorBundleIdentifier</key>
+				<string>com.brandonwalkin.BWToolkit</string>
 				<key>name</key>
-				<string>BWToolkit Initializer</string>
+				<string>Interface Builder BWToolkit Plugin</string>
 				<key>point</key>
-				<string>Xcode.IDEFoundation.IDEInitialization</string>
+				<string>Xcode.InterfaceBuilderKit.IntegratorBundleSupport</string>
+				<key>supportedRuntime</key>
+				<array>
+					<dict>
+						<key>identifier</key>
+						<string>IBCocoaFramework</string>
+					</dict>
+				</array>
 				<key>version</key>
 				<string>0.1</string>
 			</dict>
@@ -75,7 +79,7 @@
 				<array>
 					<dict>
 						<key>keyPath</key>
-						<string>ourSetting</string>
+						<string>hasShadow</string>
 					</dict>
 				</array>
 				<key>localizableStringAttribute</key>
@@ -98,33 +102,43 @@
 				<key>version</key>
 				<string>0.1</string>
 			</dict>
-			<key>Xcode.InterfaceBuilderKit.BWToolkitIntegration.IntegratorBundleSupport</key>
+			<key>Xcode.InterfaceBuilderKit.BWToolkitIntegration.Inspector.Attributes.BWStyledTextField</key>
 			<dict>
-				<key>dependentFramework</key>
+				<key>inspectorTitle</key>
+				<string>Styled Text Field</string>
+				<key>id</key>
+				<string>Xcode.InterfaceBuilderKit.BWToolkitIntegration.Inspector.Attributes.BWStyledTextField</string>
+				<key>contentType</key>
+				<string>Xcode.InterfaceBuilderKit.BWStyledTextField</string>
+				<key>point</key>
+				<string>Xcode.IDEKit.Inspector</string>
+				<key>version</key>
+				<string>0.1</string>
+				<key>sliceFile</key>
+				<string>BWStyledTextField</string>
+				<key>controllerClass</key>
+				<string>IBInspectorViewController</string>
+				<key>name</key>
+				<string>BWStyledTextField</string>
+				<key>categoryIdentifier</key>
+				<string>Xcode.InterfaceBuilderKit.InspectorCategory.Attributes</string>
+			</dict>
+			<key>Xcode.InterfaceBuilderKit.MacOSX.ClassDescriptionIntegrator.BWStyledTextField</key>
+			<dict>
+				<key>classdescriptions</key>
 				<array>
 					<dict>
-						<key>name</key>
-						<string>BWTK.framework</string>
-						<key>path</key>
-						<string>/Library/Frameworks</string>
+						<key>filename</key>
+						<string>BWStyledTextField.classdescription</string>
 					</dict>
 				</array>
 				<key>id</key>
-				<string>Xcode.InterfaceBuilderKit.BWToolkitIntegration.IntegratorBundleSupport</string>
-				<key>integratedClass</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>BWStyledTextField</string>
-					</dict>
-				</array>
-				<key>integratorBundleIdentifier</key>
-				<string>com.brandonwalkin.BWToolkitPlugin</string>
+				<string>Xcode.InterfaceBuilderKit.MacOSX.ClassDescriptionIntegrator.BWStyledTextField</string>
 				<key>name</key>
-				<string>BWToolkit Interface Builder Plug-in</string>
+				<string>BWStyledTextField Class Descriptions</string>
 				<key>point</key>
-				<string>Xcode.InterfaceBuilderKit.IntegratorBundleSupport</string>
-				<key>supportedRuntime</key>
+				<string>Xcode.InterfaceBuilderKit.ClassDescriptions</string>
+				<key>runtime</key>
 				<array>
 					<dict>
 						<key>identifier</key>
@@ -134,32 +148,16 @@
 				<key>version</key>
 				<string>0.1</string>
 			</dict>
-			<key>Xcode.InterfaceBuilderKit.BWToolkitIntegration.ObjectLibraryTemplates</key>
+			<key>Xcode.BWToolkitPlugin.Initializer</key>
 			<dict>
-				<key>controller</key>
-				<string>IBMacFrameworksObjectLibraryTemplateController</string>
 				<key>id</key>
-				<string>Xcode.InterfaceBuilderKit.BWToolkitIntegration.ObjectLibraryTemplates</string>
-				<key>librarySourceTitle</key>
-				<string>Xcode.InterfaceBuilderKit.BWToolkitIntegration.ObjectsLibraryTemplates.BWToolkitSourceTitle</string>
-				<key>name</key>
+				<string>Xcode.BWToolkitPlugin.Initializer</string>
+				<key>initializationClass</key>
 				<string>BWToolkit</string>
-				<key>nib</key>
-				<array>
-					<dict>
-						<key>filename</key>
-						<string>BWStyledTextFieldInspector</string>
-					</dict>
-				</array>
+				<key>name</key>
+				<string>BWToolkitPlugin Initializer</string>
 				<key>point</key>
-				<string>Xcode.InterfaceBuilderKit.ObjectLibraryTemplates</string>
-				<key>runtime</key>
-				<array>
-					<dict>
-						<key>identifier</key>
-						<string>IBCocoaFramework</string>
-					</dict>
-				</array>
+				<string>Xcode.IDEFoundation.IDEInitialization</string>
 				<key>version</key>
 				<string>0.1</string>
 			</dict>
@@ -183,11 +181,9 @@
 	<key>version</key>
 	<dict>
 		<key>compiler-build</key>
-		<integer>1</integer>
+		<real>1505</real>
 		<key>file-format</key>
 		<integer>1</integer>
-		<key>New item</key>
-		<string>BWTK.framework</string>
 	</dict>
 </dict>
 </plist>

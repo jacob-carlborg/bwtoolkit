@@ -5,11 +5,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>BWToolkitFramework</string>
+	<string>BWTK</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.brandonwalkin.BWToolkitFramework</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>BWTK</string>
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleSignature</key>
@@ -18,7 +20,5 @@
 	<string>1.2.5</string>
 	<key>NSPrincipalClass</key>
 	<string>BWToolkit</string>
-	<key>CFBundleName</key>
-	<string>BWTK</string>
 </dict>
 </plist>

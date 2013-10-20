@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <slice>
-    <sliver title="Our Setting">
-        <property type="string" title="Our Setting" 
-               keyPath="inspectedObjectsController.selection.object.ourSetting" />
+    <sliver title="Has Shadow">
+        <property type="boolean" title="Has Shadow" keyPath="inspectedObjectsController.selection.object.hasShadow" />
+    </sliver>
+    <sliver title="Starting Color">
+        <property type="color" title="Has Shadow" keyPath="inspectedObjectsController.selection.object.startingColor" />
+    </sliver>
+    <sliver title="Ending Color">
+        <property type="color" title="Has Shadow" keyPath="inspectedObjectsController.selection.object.endingColor" />
     </sliver>
 </slice>

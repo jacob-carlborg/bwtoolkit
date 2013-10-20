@@ -91,11 +91,14 @@
 		4647A1D217B9F3190002C096 /* NSApplication+BWAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CAAC33380FE5DA5700C66575 /* NSApplication+BWAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4647A1D617B9F3190002C096 /* NSWindow-NSTimeMachineSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0D2A250E2F034000E8680C /* NSWindow-NSTimeMachineSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A018B8B18106DED0002A625 /* BWTK.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C7DE52F01325C29F009F7FA7 /* BWTK.framework */; };
-		7A018B8C18106E010002A625 /* InterfaceBuilderKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4647A12317B9E39F0002C096 /* InterfaceBuilderKit.framework */; };
+		7A4498181813F1E50082F965 /* BWStyledTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A2EE4101813E3CC002E6B76 /* BWStyledTextField.xib */; };
+		7A44981A1813F3710082F965 /* PlugIn.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A4498191813F3710082F965 /* PlugIn.strings */; };
+		7A44981E181404430082F965 /* BWStyledTextField.inspector in Resources */ = {isa = PBXBuildFile; fileRef = 7A018B90181317B50002A625 /* BWStyledTextField.inspector */; };
+		7A44981F18140B8E0082F965 /* BWStyledTextField.classdescription in Resources */ = {isa = PBXBuildFile; fileRef = 7A018B8E1813137D0002A625 /* BWStyledTextField.classdescription */; };
+		7A4498201814605E0082F965 /* BWTK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DE52F01325C29F009F7FA7 /* BWTK.framework */; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
 		8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */; };
 		C08787290A49DE9A00E9B151 /* BWToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* BWToolkit.m */; };
-		C7534CD41325BC4A002EF382 /* BWTK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7534CD31325BC4A002EF382 /* BWTK.framework */; };
 		C7D4ACA612C939E8000FD3F9 /* TexturedSliderTrackRight.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA630A680DC7F6FC00AD7F9E /* TexturedSliderTrackRight.tiff */; };
 		C7D4ACA712C939E8000FD3F9 /* TexturedSliderTrackFill.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA630A690DC7F6FC00AD7F9E /* TexturedSliderTrackFill.tiff */; };
 		C7D4ACA812C939E8000FD3F9 /* TexturedSliderTrackLeft.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA630A6A0DC7F6FC00AD7F9E /* TexturedSliderTrackLeft.tiff */; };
@@ -489,7 +492,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7A018B8B18106DED0002A625 /* BWTK.framework in Copy Frameworks */,
-				7A018B8C18106E010002A625 /* InterfaceBuilderKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +510,8 @@
 		53DF68FE067E5B5A0090B5B0 /* BWToolkit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BWToolkit-Info.plist"; sourceTree = "<group>"; };
 		7A018B8E1813137D0002A625 /* BWStyledTextField.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.ibClassDescription; path = BWStyledTextField.classdescription; sourceTree = "<group>"; };
 		7A018B90181317B50002A625 /* BWStyledTextField.inspector */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BWStyledTextField.inspector; sourceTree = "<group>"; };
+		7A2EE4101813E3CC002E6B76 /* BWStyledTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BWStyledTextField.xib; sourceTree = "<group>"; };
+		7A4498191813F3710082F965 /* PlugIn.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = PlugIn.strings; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C7534CD31325BC4A002EF382 /* BWTK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWTK.framework; path = DerivedData/BWToolkit/Build/Products/Release/BWTK.framework; sourceTree = "<group>"; };
@@ -840,7 +844,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7534CD41325BC4A002EF382 /* BWTK.framework in Frameworks */,
+				7A4498201814605E0082F965 /* BWTK.framework in Frameworks */,
 				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -889,6 +893,7 @@
 				CA99183D0DF4DC6A00FE0577 /* Inspectors */,
 				CA630A530DC7F59800AD7F9E /* Library Thumbnails */,
 				168FA233180BFA5F008B62F3 /* BWToolkit.xcplugindata */,
+				7A4498191813F3710082F965 /* PlugIn.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1503,6 +1508,7 @@
 				CAEE05610FD764AB001A1C3F /* BWHyperlinkButtonInspector.xib */,
 				CAEE078A0FD79E3B001A1C3F /* BWStyledTextFieldInspector.xib */,
 				CAEE09FF0FD7D544001A1C3F /* BWGradientBoxInspector.xib */,
+				7A2EE4101813E3CC002E6B76 /* BWStyledTextField.xib */,
 			);
 			name = Inspectors;
 			sourceTree = "<group>";
@@ -1864,6 +1870,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */,
+				7A44981F18140B8E0082F965 /* BWStyledTextField.classdescription in Resources */,
 				CA6309C00DC7EB5E00AD7F9E /* BWTexturedSlider.classdescription in Resources */,
 				CA6309C10DC7EB5E00AD7F9E /* BWTexturedSliderCell.classdescription in Resources */,
 				CA6309C20DC7EB5E00AD7F9E /* BWTransparentButton.classdescription in Resources */,
@@ -1884,12 +1891,14 @@
 				CA630A500DC7F59300AD7F9E /* Library-TexturedSlider.tif in Resources */,
 				CA630A510DC7F59300AD7F9E /* Library-InsetTextField.tif in Resources */,
 				CA630A5F0DC7F63C00AD7F9E /* BWToolkitLibrary.nib in Resources */,
+				7A44981A1813F3710082F965 /* PlugIn.strings in Resources */,
 				CA630A600DC7F63C00AD7F9E /* BWTransparentControlsLibrary.nib in Resources */,
 				CA630A620DC7F63C00AD7F9E /* BWSelectableToolbarInspector.nib in Resources */,
 				CA325D4E0DCD2EEE001446BB /* BWAnchoredButtonBarInspector.xib in Resources */,
 				CA944E3A0DDFE32A00F103BC /* Library-ShowFonts.tif in Resources */,
 				CA944E3B0DDFE32A00F103BC /* Library-GradientSplitView.tif in Resources */,
 				CA944E3C0DDFE32A00F103BC /* Library-ShowColors.tif in Resources */,
+				7A44981E181404430082F965 /* BWStyledTextField.inspector in Resources */,
 				CA944E3D0DDFE32A00F103BC /* Library-TransparentButton.tif in Resources */,
 				CA944E450DDFE50200F103BC /* Library-TransparentSlider.tif in Resources */,
 				CA944E460DDFE50200F103BC /* Library-TransparentCheckbox.tif in Resources */,
@@ -1903,6 +1912,7 @@
 				CA9450820DE0DE7F00F103BC /* Library-RemoveBottomBar.tif in Resources */,
 				CA9450890DE0E6BA00F103BC /* BWAddSmallBottomBar.classdescription in Resources */,
 				CA9451040DE13E4400F103BC /* BWBottomBarLibrary.nib in Resources */,
+				7A4498181813F1E50082F965 /* BWStyledTextField.xib in Resources */,
 				CA9451D10DE1656300F103BC /* BWTransparentTableView.classdescription in Resources */,
 				CA9451EB0DE1692C00F103BC /* BWTransparentTableViewCell.classdescription in Resources */,
 				CA9454200DE29F0A00F103BC /* BWAnchoredButtonBar.classdescription in Resources */,
